@@ -1127,7 +1127,7 @@ button {
     border-color 0.3s ease;
 }
 
-.cta-btn:hover {
+.form-submit:hover {
   background-color: #fff;
   color: var(--orange);
   border-color: var(--orange);

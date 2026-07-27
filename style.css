@@ -249,8 +249,8 @@ button {
 }
 
 .vege-icon {
-  width: 60px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
   object-fit: contain;
 }
 
@@ -375,13 +375,13 @@ button {
 }
 
 .empathy-heading {
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 500;
   margin-bottom: 16px;
 }
 
 .empathy-sub {
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 500;
 }
 
@@ -658,19 +658,20 @@ button {
 
 .flow-title-row {
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 10px;
+  align-items: flex-end;
   margin-bottom: 16px;
+  transform: translateX(30px);
 }
 
 .flow-title-row h2 {
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 500;
 }
+
 .flow-icon {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   object-fit: contain;
 }
 
@@ -736,49 +737,21 @@ button {
   padding: 48px 20px 60px;
 }
 
-.trust-bg-top {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  pointer-events: none;
-  z-index: 0;
-}
-
-.trust-bg-bottom {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  pointer-events: none;
-  z-index: 0;
-}
-
 .trust-title-row {
-  position: relative;
-  z-index: 1;
   display: flex;
-  align-items: flex-end;
   justify-content: center;
-  gap: 12px;
+  align-items: flex-end;
   margin-bottom: 24px;
 }
 
 .trust-title-row h2 {
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 500;
 }
 
-.trust-veggie-icons {
-  display: flex;
-  align-items: flex-end;
-}
-
 .tv-icon {
-  width: 55px;
-  height: 55px;
+  width: 80px;
+  height: 80px;
   object-fit: contain;
 }
 
@@ -809,7 +782,7 @@ button {
 
 .trust-field-img {
   width: 420px;
-  height: 300px;
+  height: auto;
   object-fit: cover;
 }
 
@@ -876,6 +849,8 @@ button {
   position: absolute;
   bottom: -16%;
   right: 8%;
+  width: 80px;
+  height: 80px;
 }
 
 .faq-list {
@@ -996,15 +971,10 @@ button {
 
 .contact-title-row {
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 16px;
-  margin-bottom: 16px;
-}
-
-.contact-v-icons {
-  display: flex;
   align-items: flex-end;
+  transform: translateX(-36px);
+  margin-bottom: 16px;
 }
 
 .contact .vege-icon {
@@ -1018,14 +988,14 @@ button {
 }
 
 .contact-main {
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 500;
 }
 
 .contact-sub {
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 500;
-  color: #333;
+  color: var(--text);
 }
 
 .contact-intro {
@@ -1487,6 +1457,10 @@ button {
 }
 
 @media (max-width: 480px) {
+  .vege-icon {
+    width: 60px;
+    height: 50px;
+  }
   .hero-badges {
     gap: 12px;
   }
@@ -1506,6 +1480,15 @@ button {
   }
   .hero-bottom-area .price-cta-block {
     max-width: 360px;
+  }
+  .empathy-heading {
+    font-size: 24px;
+  }
+  .empathy-sub {
+    font-size: 16px;
+  }
+  .trust-title-row h2 {
+    font-size: 24px;
   }
   .campaign-row {
     gap: 6px;
@@ -1568,5 +1551,26 @@ button {
   .bubble-m {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+  .flow-icon {
+    width: 60px;
+    height: 60px;
+  }
+  .flow-title-row h2 {
+    font-size: 24px;
+  }
+  .faq-inner .vege-icon {
+    width: 60px;
+    height: 60px;
+  }
+  .contact-main {
+    font-size: 24px;
+  }
+  .contact-sub {
+    font-size: 16px;
+  }
+  .contact .vege-icon {
+    width: 80px;
+    height: 50px;
   }
 }

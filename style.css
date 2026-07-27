@@ -1115,11 +1115,23 @@ button {
   display: block;
   margin: 20px auto 12px;
   background: var(--orange);
+  border: 2px solid var(--orange);
   border-radius: 40px;
   padding: 20px 48px;
   font-family: "Kiwi Maru", serif;
   font-size: 20px;
   color: #fff;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #fff;
+  color: var(--orange);
+  border-color: var(--orange);
+  transform: translateY(-2px);
 }
 
 .form-notes {

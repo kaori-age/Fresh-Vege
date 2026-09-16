@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fresh Vege - 新鮮・安心・安全な無農薬野菜を食卓へ</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ============================================================
+     HERO (FV)
+     ============================================================ -->
+  <section class="hero">
+
+    <!-- TOP: 2-column (left image / right text) -->
+    <div class="hero-top">
+      <!-- Left column: logo + hero photo -->
+      <div class="hero-left">
+        <img class="hero-logo" src="img/hero-logo.png" alt="Fresh Vege">
+        <img class="hero-main-img" src="img/hero-main.png" alt="Fresh Vege 新鮮野菜と親子">
+      </div>
+
+      <!-- Right column: heading + sub + badges -->
+      <div class="hero-right">
+        <p class="hero-heading kiwi">新鮮・安心・安全な<br>無農薬野菜を食卓へ</p>
+        <p class="hero-sub kiwi">
+          小さなお子さまがいるご家庭へ。<br>
+          Fresh Vegeは、無農薬・化学肥料不使用の畑で育った<br>
+          旬野菜だけを厳選。<br>
+          「わが子に毎日食べさせたいか」という基準で選んだ野菜を、<br>
+          朝採れ直送でお届けします。
+        </p>
+        <div class="hero-badges">
+          <div class="hero-badge">無農薬<br>化学肥料不使用</div>
+          <div class="hero-badge">旬の野菜だけを<br>厳選</div>
+          <div class="hero-badge">朝採れ<br>最短当日発送</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOTTOM: background + product + price + CTA -->
+    <div class="hero-bottom-area">
+      <img class="wave-bg" src="img/bg1.png" alt="">
+
+      <div class="product-layout">
+        <!-- Product images -->
+        <div class="product-area">
+          <div class="product-imgs">
+            <img class="basket" src="img/basket.png" alt="野菜セット">
+            <img class="recipe" src="img/recipe.png" alt="レシピカード">
+          </div>
+          <div class="product-info">
+            <p class="product-title">野菜9種セット ＋ 子ども用かんたんレシピ付き</p>
+            <p class="product-annotation">※定期購入ではありません。</p>
+            <p class="product-annotation">※数量・期間には限りがあります。予定数に達し次第終了となります。</p>
+          </div>
+        </div>
+
+        <!-- Right: price + CTA -->
+        <div class="price-cta-block">
+
+
+          <!-- Campaign label -->
+          <div class="campaign-row">
+            <img class="bracket" src="img/bracket-left.png" alt="">
+            <span>今だけのキャンペーン価格</span>
+            <img class="bracket" src="img/bracket-right.png" alt="">
+          </div>
+
+          <!-- Price -->
+          <div class="price-block">
+            <div class="reg-col">
+              <span class="price-label">通常価格</span>
+              <div class="reg-num-wrap">
+                <span class="reg-big">5,000</span>
+                <span class="reg-unit">円</span>
+                <div class="strikethrough"></div>
+              </div>
+            </div>
+            <img class="arrow-icon" src="img/arrow.png" alt="→">
+            <div class="sale-wrap">
+              <span class="sale-big">2,980</span>
+              <div class="sale-unit">
+                <span class="sale-tax">税込</span>
+                <span class="sale-yen">円</span>
+              </div>
+            </div>
+            <div class="free-ship">送料<br>無料</div>
+          </div>
+
+          <button class="cta-btn hero-cta" onclick="scrollToContact()">
+            今すぐお試しパックを申し込む
+          </button>
+        </div>
+      </div>
+    </div>
+    <img class="wave-bg" src="img/bg2.png" alt="">
+  </section>
+
+
+  <!-- ============================================================
+     EMPATHY / PROBLEM
+     ============================================================ -->
+  <section class="empathy">
+
+    <div class="empathy-text-area">
+      <h2 class="empathy-heading">「子どもには、できるだけ安心なものを食べさせたい。」</h2>
+      <p class="empathy-sub">そう思うほど、買い物や献立のたびに迷いが増えていきませんか？</p>
+    </div>
+
+    <!-- Desktop: absolutely-positioned bubbles around center illustration -->
+    <div class="empathy-bubble-area">
+      <img class="empathy-illust" src="img/empathy-illust.png" alt="イラスト">
+
+      <!-- 追加：左の人物画像 -->
+      <img class="empathy-person empathy-person-left" src="img/empathy-illust-left.png" alt="親子のイラスト">
+
+      <!-- 追加：右の人物画像 -->
+      <img class="empathy-person empathy-person-right" src="img/empathy-illust-right.png" alt="親子のイラスト">
+
+      <div class="bubble b1">農薬が気になるけれど、<br>毎回すべてを確認する時間がない</div>
+      <div class="bubble b2">子どもが野菜を残すと、<br>せっかく選んだのに悲しくなる</div>
+      <div class="bubble b3">"安心そう"を選んでも、<br>本当に無農薬なのか自信が持てない</div>
+      <div class="bubble b4">忙しくて、<br>つい無難なものに寄ってしまう</div>
+      <div class="bubble b5">野菜を買っても使い切れず、<br>結局ムダになってしまう</div>
+    </div>
+
+    <!-- Mobile: bubbles + illustrations (hidden on desktop) -->
+    <div class="empathy-bubbles-mobile" style="display:none;">
+      <div class="bubble-m">農薬が気になるけれど、<br>毎回すべてを確認する時間がない</div>
+      <div class="bubble-m">"安心そう"を選んでも、<br>本当に無農薬なのか自信が持てない</div>
+      <div class="bubble-m">忙しくて、<br>つい無難なものに寄ってしまう</div>
+      <div class="bubble-m">野菜を買っても使い切れず、<br>結局ムダになってしまう</div>
+      <div class="bubble-m">子どもが野菜を残すと、<br>せっかく選んだのに悲しくなる</div>
+    </div>
+    <div class="empathy-illust-row-mobile" style="display:none;">
+      <img src="img/empathy-illust-left.png" alt="親子のイラスト">
+      <img src="img/empathy-illust.png" alt="イラスト">
+      <img src="img/empathy-illust-right.png" alt="親子のイラスト">
+    </div>
+
+    <!-- Solution text (with background) -->
+    <div class="empathy-solution-area">
+      <img class="wave-bg empathy-wave-bg-top" src="img/bg1.png" alt="">
+      <div class="empathy-solution">
+        <p class="empathy-solution-text kiwi">
+          小さな体だからこそ、毎日の積み重ねが気になる。<br>
+          だからFresh Vegeは、「できるだけ余計なものを入れない」ために、<br>
+          無農薬・化学肥料不使用の野菜だけにこだわっています。
+        </p>
+      </div>
+      <img class="wave-bg" src="img/bg4.png" alt="">
+    </div>
+  </section>
+
+
+
+  <!-- ============================================================
+     BENEFITS
+     ============================================================ -->
+  <section class="benefits">
+    <h2 class="section-title">Fresh Vege が叶える、毎日の変化</h2>
+
+    <div class="benefits-list">
+
+      <!-- Card 01 -->
+      <div class="benefit-card bc-left">
+        <span class="ben-num">01</span>
+        <img class="ben-img" src="img/benefit-01.png" alt="無農薬野菜">
+        <div class="ben-body">
+          <h3>"無農薬を選ぶ負担"がなくなる</h3>
+          <p>Fresh Vegeは、契約農家の畑で無農薬・化学肥料不使用で育てた旬野菜のみを厳選。<br>あなたは毎回、表示や産地で迷わなくて大丈夫です。</p>
+        </div>
+      </div>
+
+      <!-- Card 02 -->
+      <div class="benefit-card bc-right">
+        <span class="ben-num">02</span>
+        <div class="ben-body">
+          <h3>"子どもが食べやすい旬"で、ひと口目が変わる</h3>
+          <p>旬の野菜は、素材の甘みや香りが引き立ちやすい。<br>「野菜っておいしい！」のきっかけを、食卓に増やします。</p>
+        </div>
+        <img class="ben-img" src="img/benefit-02.png" alt="旬の野菜">
+      </div>
+
+      <!-- Card 03 -->
+      <div class="benefit-card bc-left">
+        <span class="ben-num">03</span>
+        <img class="ben-img" src="img/benefit-03.png" alt="レシピセット">
+        <div class="ben-body">
+          <h3>"届いたその日から使える"から、食卓が回る</h3>
+          <p>栄養バランスを考えた9種セットに、子ども用かんたんレシピ付き。<br>献立の迷いが減って、忙しい日でも整いやすくなります。</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+     OFFER
+     ============================================================ -->
+  <img class="wave-bg" src="img/bg3.png" alt="">
+  <section class="offer">
+    <h2 class="section-title" style="margin-bottom:8px;">期間限定お試しパック</h2>
+    <div class="product-layout">
+      <!-- Product images -->
+      <div class="product-area">
+        <div class="product-imgs">
+          <img class="basket" src="img/basket.png" alt="野菜セット">
+          <img class="recipe" src="img/recipe.png" alt="レシピカード">
+        </div>
+        <div class="product-info">
+          <p class="product-title">野菜9種セット ＋ 子ども用かんたんレシピ付き</p>
+        </div>
+      </div>
+
+      <!-- Price -->
+      <div class="price-cta-block">
+        <div class="campaign-row">
+          <img class="bracket" src="img/bracket-left.png" alt="">
+          <span>今だけのキャンペーン価格</span>
+          <img class="bracket flip" src="img/bracket-right.png" alt="">
+        </div>
+        <div class="price-block">
+          <div class="reg-col">
+            <span class="price-label">通常価格</span>
+            <div class="reg-num-wrap">
+              <span class="reg-big">5,000</span>
+              <span class="reg-unit">円</span>
+              <div class="strikethrough"></div>
+            </div>
+          </div>
+          <img class="arrow-icon" src="img/arrow.png" alt="→">
+          <div class="sale-wrap">
+            <span class="sale-big">2,980</span>
+            <div class="sale-unit">
+              <span class="sale-tax">税込</span>
+              <span class="sale-yen">円</span>
+            </div>
+          </div>
+          <div class="free-ship">送料<br>無料</div>
+        </div>
+        <p class="product-notes">
+          ※数量・期間には限りがあります。予定数に達し次第終了となります。<br>
+          ※内容は季節により変わります。旬のおいしさをお届けします。
+        </p>
+      </div>
+    </div>
+    <button class="cta-btn offer-cta" onclick="scrollToContact()">今すぐお試しパックを申し込む</button>
+  </section>
+  <img class="wave-bg" src="img/bg4.png" alt="">
+
+  <!-- ============================================================
+     SOLUTION
+     ============================================================ -->
+  <section class="solution">
+    <p class="solution-intro">
+      Fresh Vege が目指しているのは、ただの野菜宅配ではありません。<br>
+      無農薬・化学肥料不使用 × 子育て家庭仕様で、<br>
+      「選ぶ不安」と「使いこなす不安」をまとめて軽くします。
+    </p>
+
+    <div class="solution-inner">
+      <div class="solution-list">
+
+        <div class="sol-item">
+          <img class="sol-icon" src="img/sol-icon-01.png" alt="">
+          <div class="sol-text">
+            <h3>子どもにもやさしい品質</h3>
+            <p>厳しい基準で選定した無農薬野菜</p>
+          </div>
+        </div>
+
+        <div class="sol-item">
+          <img class="sol-icon" src="img/sol-icon-02.png" alt="">
+          <div class="sol-text">
+            <h3>栄養バランスを考えたセット内容</h3>
+            <p>子育て家庭向けの食材・レシピ提案つき</p>
+          </div>
+        </div>
+
+        <div class="sol-item">
+          <img class="sol-icon" src="img/sol-icon-03.png" alt="">
+          <div class="sol-text">
+            <h3>契約農家からの新鮮直送</h3>
+            <p>朝採れの野菜を最短で当日発送</p>
+          </div>
+        </div>
+
+      </div>
+
+      <img class="solution-img" src="img/solution-img.png" alt="Fresh Vegeのこだわり">
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+     FLOW
+     ============================================================ -->
+  <img class="wave-bg" src="img/bg1.png" alt="">
+  <section class="flow">
+    <div class="flow-title-row">
+      <h2>配送の流れ</h2>
+      <img class="flow-icon" src="img/veggie-icon1.png" alt="">
+    </div>
+
+    <p class="flow-desc">
+      申込 → 野菜の収穫・発送 → ご家庭へお届け → 家族で食卓<br>
+      Fresh Vegeは契約農家と直接つながっているからこそ、収穫から発送までがスムーズ。<br>
+      旬の野菜を、いちばんおいしい状態でお届けします。
+    </p>
+
+    <div class="flow-steps">
+
+      <div class="flow-step">
+        <p class="step-label">step1</p>
+        <img class="step-img" src="img/flow-step1.png" alt="申込">
+        <p class="step-name">申込</p>
+        <p class="step-desc">フォーム入力は約3分。お名前・ご連絡先・配達希望曜日などを入力するだけ。<br><small>※送信後、確認メールにてご案内をお送りします。</small></p>
+      </div>
+
+      <div class="flow-step">
+        <p class="step-label">step2</p>
+        <img class="step-img" src="img/flow-step2.png" alt="野菜の収穫・発送">
+        <p class="step-name">野菜の収穫・発送</p>
+        <p class="step-desc">契約農家で朝採れした旬野菜を厳選し、最短で当日発送。</p>
+      </div>
+
+      <div class="flow-step">
+        <p class="step-label">step3</p>
+        <img class="step-img" src="img/flow-step3.png" alt="ご家庭へお届け">
+        <p class="step-name">ご家庭へお届け</p>
+        <p class="step-desc">箱を開けた瞬間に違いがわかる"新鮮さ"をそのまま。</p>
+      </div>
+
+      <div class="flow-step">
+        <p class="step-label">step4</p>
+        <img class="step-img" src="img/flow-step4.png" alt="家族で食卓">
+        <p class="step-name">家族で食卓</p>
+        <p class="step-desc">子ども用かんたんレシピ付きで、今日からすぐ使えます。</p>
+      </div>
+
+    </div>
+  </section>
+  <img class="wave-bg" src="img/bg2.png" alt="">
+
+  <!-- ============================================================
+     TRUST
+     ============================================================ -->
+  <section class="trust">
+    <div class="trust-title-row">
+      <div class="trust-veggie-icons">
+        <img class="vege-icon" src="img/veggie-icon2.png" alt="">
+      </div>
+      <h2>「子どもに食べさせたい基準」で選びます</h2>
+    </div>
+
+    <p class="trust-intro">
+      Fresh Vegeの野菜は、地域の契約農家が手間ひまかけて育てたものだけ。<br>
+      私たちが大切にしているのは、流行や見た目よりも「わが子に毎日食べさせたい」と思える確かな基準です。<br>
+      <br>
+      無農薬・化学肥料不使用の畑で、土づくりから丁寧に。<br>
+      その季節にいちばんおいしい旬の野菜だけを選び、セット内容も一つひとつ厳しく選定しています。
+    </p>
+
+    <div class="trust-grid">
+      <!-- trust1 -->
+      <img class="trust-field-img" src="img/trust1.png" alt="無農薬・化学肥料不使用">
+
+      <!-- trust2 -->
+      <img class="trust-field-img" src="img/trust2.png" alt="旬の野菜のみ">
+
+      <!-- trust3 -->
+      <img class="trust-field-img" src="img/trust3.png" alt="子どもが食べやすい旬を優先">
+
+      <!-- trust4 -->
+      <img class="trust-field-img" src="img/trust4.png" alt="契約農家から直送">
+    </div>
+
+    <p class="trust-closing">
+      大手のように大量には扱えません。<br>
+      だからこそ、畑の様子や育ち具合まで目を配りながら、<br>
+      家族の食卓に安心が届くかをいちばんに考えてお届けします。
+    </p>
+  </section>
+
+
+  <!-- ============================================================
+     FAQ
+     ============================================================ -->
+  <img class="wave-bg" src="img/bg3.png" alt="">
+  <section class="faq">
+    <div class="faq-inner">
+      <h2 class="section-title">よくある質問</h2>
+
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            <div class="faq-q-left">
+              <span class="faq-mark kiwi">Q</span>
+              <span class="faq-qtxt">定期購入ですか？</span>
+            </div>
+            <span class="faq-toggle">＋</span>
+          </div>
+          <div class="faq-a">
+            <span class="faq-mark kiwi">A</span>
+            <p class="faq-atxt">いいえ。期間限定のお試しパックです。まずは気軽にお試しください。</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            <div class="faq-q-left">
+              <span class="faq-mark kiwi">Q</span>
+              <span class="faq-qtxt">どんな野菜が入りますか？</span>
+            </div>
+            <span class="faq-toggle">＋</span>
+          </div>
+          <div class="faq-a">
+            <span class="faq-mark kiwi">A</span>
+            <p class="faq-atxt">その季節に一番おいしい旬野菜を中心に9種お届けします。内容は季節で変わります。</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            <div class="faq-q-left">
+              <span class="faq-mark kiwi">Q</span>
+              <span class="faq-qtxt">子どもが野菜を食べないのですが…</span>
+            </div>
+            <span class="faq-toggle">＋</span>
+          </div>
+          <div class="faq-a">
+            <span class="faq-mark kiwi">A</span>
+            <p class="faq-atxt">多くのご家庭が同じ悩みを抱えています。Fresh Vegeは子どもが食べやすい旬野菜を中心に、かんたんレシピ付きで"ひと口目のハードル"を下げる工夫をしています。</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            <div class="faq-q-left">
+              <span class="faq-mark kiwi">Q</span>
+              <span class="faq-qtxt">送料はかかりますか？</span>
+            </div>
+            <span class="faq-toggle">＋</span>
+          </div>
+          <div class="faq-a">
+            <span class="faq-mark kiwi">A</span>
+            <p class="faq-atxt">お試しパックは送料込み¥2,980です。</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            <div class="faq-q-left">
+              <span class="faq-mark kiwi">Q</span>
+              <span class="faq-qtxt">申込後はどう進みますか？</span>
+            </div>
+            <span class="faq-toggle">＋</span>
+          </div>
+          <div class="faq-a">
+            <span class="faq-mark kiwi">A</span>
+            <p class="faq-atxt">フォーム送信後、確認メールをお送りします。メール内でお届け先住所などのご案内をいたします。</p>
+          </div>
+        </div>
+
+      </div>
+      <img class="vege-icon" src="img/veggie-icon3.png" alt="">
+    </div>
+  </section>
+  <img class="wave-bg" src="img/bg4.png" alt="">
+
+
+  <!-- ============================================================
+     CLOSING
+     ============================================================ -->
+  <section class="closing">
+
+    <p class="closing-message">
+      「はじめての野菜が、思い出になるように。」<br>
+      小さなお子さんが「野菜っておいしい!」と思えるきっかけになるよう、心を込めてお届けします。<br>
+      忙しい毎日の中で、食卓が少しでも豊かになるようお手伝いさせてください。
+    </p>
+
+    <p class="closing-campaign">期間限定お試しキャンペーン</p>
+
+    <div class="product-layout">
+
+      <!-- Left: product images + title -->
+      <div class="product-area">
+        <div class="product-imgs">
+          <img class="basket" src="img/basket.png" alt="野菜セット">
+          <img class="recipe" src="img/recipe.png" alt="レシピカード">
+        </div>
+        <div class="product-info">
+          <p class="product-title">野菜9種セット ＋ 子ども用かんたんレシピ付き</p>
+        </div>
+      </div>
+
+      <!-- Right: price + CTA -->
+      <div class="price-cta-block">
+
+        <!-- Price -->
+        <div class="price-block">
+          <div class="reg-col">
+            <span class="price-label">通常価格</span>
+            <div class="reg-num-wrap">
+              <span class="reg-big">5,000</span>
+              <span class="reg-unit">円</span>
+              <div class="strikethrough"></div>
+            </div>
+          </div>
+          <img class="arrow-icon" src="img/arrow.png" alt="→">
+          <div class="sale-wrap">
+            <span class="sale-big">2,980</span>
+            <div class="sale-unit">
+              <span class="sale-tax">税込</span>
+              <span class="sale-yen">円</span>
+            </div>
+          </div>
+          <div class="free-ship">送料<br>無料</div>
+        </div>
+
+        <p class="product-notes" style="margin-top:12px;">
+          ※数量・期間には限りがあります。予定数に達し次第終了となります。<br>
+          ※内容は季節により変わります。旬のおいしさをお届けします。
+        </p>
+      </div>
+    </div>
+
+    <p class="closing-text">
+      家族の健康を守るために、今日も頑張っているあなたへ。<br>
+      Fresh Vegeは、無農薬・化学肥料不使用の旬野菜を、選ぶ負担ごとお届けします。<br>
+      安心して出せる食材があるだけで、食卓はもっとやさしく、もっとラクになります。
+    </p>
+
+    <button class="cta-btn closing-cta" onclick="scrollToContact()">今すぐお試しパックを申し込む</button>
+
+    <p class="product-notes" style="margin-top:8px;">
+      ※数量・期間には限りがあります。予定数に達し次第終了となります。
+    </p>
+  </section>
+
+
+  <!-- ============================================================
+     CONTACT / FORM
+     ============================================================ -->
+  <img class="wave-bg" src="img/bg3.png" alt="">
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+
+      <div class="contact-title-row">
+        <div class="contact-v-icons">
+          <img class="vege-icon" src="img/veggie-icon4.png" alt="">
+        </div>
+        <div class="contact-titles">
+          <p class="contact-main">お申込みフォーム</p>
+          <p class="contact-sub">ご質問もこちらから</p>
+        </div>
+      </div>
+
+      <p class="contact-intro">
+        お試しパックのお申込み／ご質問は、下記フォームよりお送りください。<br>
+        内容を確認のうえ、確認メールをお送りいたします。
+      </p>
+
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+
+        <div class="form-row">
+          <div class="form-lbl-wrap">
+            <span class="form-lbl">お名前</span>
+            <span class="form-req">必須</span>
+          </div>
+          <input class="form-input" type="text" placeholder="野菜 太郎" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-lbl-wrap">
+            <span class="form-lbl">ふりがな</span>
+            <span class="form-req">必須</span>
+          </div>
+          <input class="form-input" type="text" placeholder="やさい　たろう" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-lbl-wrap">
+            <span class="form-lbl">メールアドレス</span>
+            <span class="form-req">必須</span>
+          </div>
+          <input class="form-input" type="email" placeholder="abcde@fg.com" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-lbl-wrap">
+            <span class="form-lbl">電話番号</span>
+            <span class="form-req">必須</span>
+          </div>
+          <input class="form-input" type="tel" placeholder="090-1234-5678" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-lbl-wrap">
+            <span class="form-lbl">配送希望曜日</span>
+            <span class="form-req">必須</span>
+          </div>
+          <select class="form-select" required onchange="this.classList.add('filled')">
+            <option value="" disabled selected>選択してください</option>
+            <option value="月">月曜日</option>
+            <option value="火">火曜日</option>
+            <option value="水">水曜日</option>
+            <option value="木">木曜日</option>
+            <option value="金">金曜日</option>
+            <option value="土">土曜日</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <div class="form-lbl-wrap" style="align-items:flex-start;padding-top:12px;">
+            <span class="form-lbl">その他ご質問</span>
+          </div>
+          <textarea class="form-textarea" placeholder="こちらへどうぞ"></textarea>
+        </div>
+
+        <button class="form-submit" type="submit">入力内容を送信する</button>
+
+        <p class="form-notes">
+          ※送信後、確認メールにてお届け先住所などのご案内をお送りします。<br>
+          ※定期購入ではありません。まずはお気軽にお試しからどうぞ。
+        </p>
+
+      </form>
+
+    </div>
+
+    <footer class="site-footer">
+      Copyright ©︎2026 Fresh Vege
+    </footer>
+
+  </section>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

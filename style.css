@@ -661,7 +661,8 @@ button {
   justify-content: center;
   align-items: flex-end;
   margin-bottom: 16px;
-  transform: translateX(30px);
+  /* 見出しの位置は内側の余白で調整し、行全体を画面外へ動かさない */
+  padding-left: 60px;
 }
 
 .flow-title-row h2 {
